@@ -1,0 +1,47 @@
+@import "../vars";
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    border-radius: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-orange {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #f58527;
+    &:hover {
+        color: #ffffff;
+        background-color: darken(#f58527, 12%);
+    }
+}
+
+.btn-green {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #3e7344;
+    &:hover {
+        color: #ffffff;
+        background-color: darken(#3e7344, 12%);
+    }
+}
+
+.btn-green-light {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #8ec23f;
+    &:hover {
+        color: #ffffff;
+        background-color: darken(#8ec23f, 12%);
+    }
+}

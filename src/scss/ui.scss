@@ -1,0 +1,109 @@
+@import 'vars';
+@import 'components/text.scss';
+@import 'components/button.scss';
+@import 'components/fonts.scss';
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+    opacity: 0;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+    z-index: 1;
+}
+
+.form-group {
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+    input,
+    textarea {
+        border: none;
+        padding: 0 23px;
+        height: 45px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 120%;
+        background-color: #fff;
+        color: #8ec23f;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        &::placeholder {
+            color: #8ec23f;
+        }
+    }
+    textarea {
+        padding: 15px 23px;
+        height: 180px;
+        resize: none;
+    }
+}
+
+.check {
+    position: relative;
+    input {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        cursor: pointer;
+        &:checked+label {
+            &::before {
+                background-color: #8ec23f;
+            }
+        }
+        &:disabled+label {
+            color: #AAAAAA;
+            pointer-events: none;
+        }
+    }
+    label {
+        padding-left: 28px;
+        position: relative;
+        min-height: 20px;
+        font-size: 16px;
+        line-height: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 16px;
+            height: 16px;
+            left: 0;
+            top: 50%;
+            background-color: #fff;
+            transform: translateY(-50%);
+            transition: all .100s;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-group {
+        margin-bottom: 17px;
+        input {
+            height: 28px;
+            padding: 0 14px;
+            font-size: 12px;
+        }
+        textarea {
+            height: 110px;
+            padding: 7px 12px;
+            font-size: 12px;
+        }
+    }
+}
