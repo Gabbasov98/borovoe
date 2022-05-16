@@ -165,7 +165,7 @@
         }
         &-info {
             padding: 75px 87px 37px;
-            background-image: url(../../img/green_bg2.webp);
+            background-image: url(../img/green_bg2.webp);
             background-size: 106% 106%;
             background-position: left -5px top -5px;
             flex-shrink: 0;
@@ -210,7 +210,7 @@
 
 .about {
     padding: 40px 0 158px;
-    background-image: url(../../img/forest.png);
+    background-image: url(../img/forest.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: left bottom;
@@ -298,7 +298,7 @@
 
 .feedback {
     padding: 22px 0 63px;
-    background-image: url(../../img/quote.png);
+    background-image: url(../img/quote.png);
     background-repeat: no-repeat;
     background-position: 0 28px;
     &__title {
@@ -369,7 +369,7 @@
 
 .consult {
     padding: 55px 0 62px;
-    background-image: url(../../img/consult_bg.webp);
+    background-image: url(../img/consult_bg.webp);
     background-size: cover;
     &__inner {
         padding-left: 100px;
@@ -428,12 +428,28 @@
     }
     .catalog {
         &__item {
+            &-title {
+                font-size: 50px;
+                line-height: 120%;
+            }
+            &-desc {
+                font-size: 20px;
+                line-height: 125%;
+            }
             &-info {
                 max-width: unset;
-                width: 37%;
+                width: 42%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+            }
+            @media screen and (max-width: 1600px) {
+                &-title {
+                    font-size: 42px;
+                }
+                &-desc {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -757,7 +773,7 @@
         }
     }
     .about {
-        background-image: url(../../img/forest2.png);
+        background-image: url(../img/forest2.png);
         background-size: 100% auto;
         &__item {
             &-img {
@@ -788,7 +804,7 @@
         }
     }
     .consult {
-        background-image: url(../../img/concult_bg2.webp);
+        background-image: url(../img/concult_bg2.webp);
         &__fg {
             input {
                 height: 40px;
