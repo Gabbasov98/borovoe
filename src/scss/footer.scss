@@ -131,14 +131,16 @@
                 }
             }
             &:nth-child(2) {
-                padding-left: 20px;
+                text-align: center;
                 margin-top: 44px;
+            }
+            &:nth-child(3) {
+                text-align: center;
             }
         }
         &__socials {
-            // justify-content: center;
+            justify-content: center;
             margin-top: 25px;
-            padding-left: 10px;
             &-item {
                 margin-right: 0;
                 &:not(:last-child) {
@@ -147,6 +149,7 @@
             }
         }
         &__qr {
+            justify-content: center;
             &-title {
                 max-width: 185px;
                 font-size: 11.6px;
@@ -155,6 +158,9 @@
             img {
                 width: 72px;
             }
+        }
+        &__app {
+            justify-content: center;
         }
         &__address {
             font-size: 13px;
