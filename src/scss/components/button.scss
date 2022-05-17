@@ -16,10 +16,10 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #f58527;
+    background-color: $orange;
     &:hover {
         color: #ffffff;
-        background-color: darken(#f58527, 12%);
+        background-color: darken($orange, 12%);
     }
 }
 
@@ -28,10 +28,10 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #3e7344;
+    background-color: $green;
     &:hover {
         color: #ffffff;
-        background-color: darken(#3e7344, 12%);
+        background-color: darken($green, 12%);
     }
 }
 

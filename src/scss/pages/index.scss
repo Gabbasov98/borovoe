@@ -1,13 +1,18 @@
 .main {
-    height: 865px;
+    height: 100vh;
     background-image: url(../img/main_bg3.webp);
     background-size: cover;
     background-position: top center;
-    padding: 246px 0 50px;
     position: relative;
+    margin-bottom: -120px;
+    &__inner,
+    .container {
+        height: 100%;
+    }
     &__inner {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         position: relative;
     }
     &__title,
@@ -20,23 +25,33 @@
         color: #ffffff;
     }
     &__title3 {
-        margin-top: 171px;
+        margin-top: 50px;
     }
     &__title2 {
-        display: none;
+        // display: none;
+        font-size: 144px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #fcedce;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
     }
     &__badges {
         position: absolute;
         right: 0;
-        top: 283px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     &__badge {
         display: block;
     }
     &__socials {
         position: absolute;
-        top: 34px;
-        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 85px;
+        z-index: 3;
         &-item {
             display: block;
             margin-bottom: 23px;
@@ -46,11 +61,16 @@
         }
     }
     &__booking {
-        margin: 250px auto 0;
+        // margin: 250px auto 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 .booking {
+    position: sticky;
+    top: 0;
+    z-index: 19;
     display: flex;
     width: 970px;
     max-width: 100%;
@@ -134,7 +154,8 @@
 }
 
 .catalog {
-    margin-top: -26px;
+    margin-top: 55px;
+    padding-top: 25px;
     position: relative;
     z-index: 2;
     &__title {
@@ -219,6 +240,9 @@
     }
     &__item {
         display: flex;
+        &:not(:last-child) {
+            margin-bottom: 41px;
+        }
         &:nth-child(even) {
             .about__item-content {
                 order: -1;
@@ -413,17 +437,8 @@
 
 @media screen and (min-width: 1300px) {
     .main {
-        height: 1000px;
-        padding-top: 20%;
-        &__inner,
-        .container {
-            height: 100%;
-        }
         &__booking {
             margin-top: auto;
-        }
-        @media screen and (max-width: 1600px) {
-            height: 900px;
         }
     }
     .catalog {
@@ -458,7 +473,11 @@
 @media screen and (max-width: 1100px) {
     .main {
         &__title2 {
-            margin-top: 12%;
+            font-size: 120px;
+            margin-top: 30px;
+        }
+        &__socials {
+            left: 30px;
         }
     }
     .catalog {
@@ -494,6 +513,12 @@
 }
 
 @media screen and (max-width: 992px) {
+    .main {
+        &__title2 {
+            font-size: 90px;
+            color: #fff;
+        }
+    }
     .booking {
         &__btn {
             font-size: 11px;
@@ -507,7 +532,7 @@
         }
     }
     .catalog {
-        margin-top: 0;
+        margin-top: 55px;
         padding-top: 25px;
         &__title {
             font-size: 20px;
@@ -666,10 +691,8 @@
 
 @media screen and (max-width: 768px) {
     .main {
-        padding: 210px 0 35px;
         height: 100vh;
-        background-image: url(../img/main_bg2.webp);
-        background-position: center;
+        // background-image: url(../img/main_bg2.webp);
         .container {
             height: 100%;
         }
@@ -682,11 +705,6 @@
         }
         &__title2 {
             font-size: 72px;
-            font-weight: 800;
-            text-transform: uppercase;
-            color: #ffffff;
-            display: block;
-            text-align: center;
             margin-top: 30px;
         }
         &__title3 {
@@ -700,9 +718,9 @@
         }
         &__badges {
             right: unset;
-            top: unset;
+            top: 70%;
             left: 0;
-            bottom: 160px;
+            // bottom: 160px;
         }
         &__badge {
             width: 47px;
@@ -712,9 +730,7 @@
         }
     }
     .booking {
-        max-width: unset;
-        width: calc(100% + 60px);
-        margin-left: -30px;
+        max-width: 100%;
         height: 58px;
         &__left {
             padding: 0 7px;
@@ -745,6 +761,8 @@
 
 @media screen and (max-width: 576px) {
     .main {
+        background-position: right 30% center;
+        background-size: auto 100%;
         &:before {
             content: '';
             position: absolute;

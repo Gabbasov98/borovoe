@@ -1,0 +1,720 @@
+@import "../vars.scss";
+.main-med {
+    background-image: url(../img/main_bg5.webp);
+    text-align: center;
+    color: #ffffff;
+    &__title {
+        font-size: 104.2px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    &__title2 {
+        font-size: 38.9px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-top: 32px;
+    }
+}
+
+.med {
+    margin-top: 55px;
+    padding: 30px 0;
+    overflow: hidden;
+    &__title {
+        text-align: center;
+    }
+    &__inner {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 80px;
+    }
+    &__left {
+        width: 327px;
+    }
+    &__card {
+        background-color: $lightGreen;
+        color: #fff;
+        padding: 55px 35px 28px;
+        text-align: center;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 42px;
+            height: 42px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &-title {
+            font-size: 29px;
+            line-height: 31px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &-desc {
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 7px;
+        }
+        &-items {
+            margin-top: 35px;
+        }
+        &-item {
+            border: 3px solid #fff;
+            margin-top: 23px;
+            padding: 6px 12px;
+        }
+        &-day {
+            font-size: 22.2px;
+            font-weight: 600;
+        }
+        &-price {
+            font-size: 46.2px;
+            font-weight: 700;
+            margin-top: 2px;
+            span {
+                font-size: 35px;
+            }
+        }
+    }
+    &__right {
+        width: calc(100% - 410px);
+        padding-top: 41px;
+    }
+    .hotel__slider {
+        width: 100%;
+    }
+    &__procedure {
+        margin-top: 32px;
+        text-align: center;
+        color: $green;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        &-title {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+        &-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 12px;
+        }
+        &-item {
+            border: 1px solid $green;
+            border-radius: 3px;
+            font-size: 12px;
+            line-height: 12px;
+            font-weight: 500;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            strong {
+                display: block;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+    }
+    &__hint {
+        margin-top: 60px;
+        margin-left: 44px;
+        max-width: 100%;
+        width: 500px;
+        li {
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 400;
+            color: #000000;
+            position: relative;
+            padding-left: 7px;
+            &:before {
+                content: '*';
+                position: absolute;
+                z-index: 1;
+                left: 0;
+            }
+        }
+    }
+}
+
+.procedure {
+    padding: 30px 0 55px;
+    text-align: center;
+    &__items {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__item {
+        padding: 20px 10px 20px;
+        border-top: 2px dashed #e8e8e8;
+        @media screen and (min-width: 576px) {
+            &:nth-child(-n+4) {
+                border: none;
+            }
+        }
+        &-num {
+            color: $lightGreen;
+            font-size: 43px;
+            font-weight: 800;
+        }
+        &-title {
+            margin: 15px auto 0;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 700;
+            color: #000000;
+            max-width: 210px;
+        }
+    }
+}
+
+.services {
+    position: relative;
+    overflow: hidden;
+    .swiper {
+        &-slide {
+            background-size: cover;
+            background-position: right 0;
+        }
+        &-pagination {
+            position: relative;
+            top: unset;
+            bottom: unset;
+            left: unset;
+            right: unset;
+            text-align: left;
+            font-weight: 400;
+            font-size: 18px;
+            color: #fff;
+            &-current {
+                font-size: 48px;
+            }
+        }
+        &-button {
+            @media screen and (min-width: 1280px) {
+                &-prev {
+                    left: 58px;
+                }
+                &-next {
+                    right: 58px;
+                }
+            }
+        }
+    }
+    &__inner {
+        padding: 168px 0 60px;
+        color: #fff;
+    }
+    &__title {
+        font-size: 41px;
+        line-height: 58px;
+        font-weight: 800;
+        max-width: 460px;
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 75px;
+        margin-top: 55px;
+        max-width: 855px;
+    }
+    &__item {
+        font-size: 14px;
+        line-height: 19px;
+        strong {
+            font-weight: 700;
+        }
+    }
+    &__pag {
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: 0;
+    }
+}
+
+.cosmetic {
+    padding: 50px 0 25px;
+    text-align: center;
+    &__title {
+        line-height: 130%;
+    }
+    &__items {
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(4, calc(25% - 24px));
+        gap: 32px;
+        padding: 0 40px;
+    }
+    &__item {
+        background-color: $lightGreen;
+        position: relative;
+        padding: 53px 25px 40px;
+        color: #fff;
+        letter-spacing: 0.01em;
+        display: flex;
+        flex-direction: column;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &-title {
+            font-size: 27px;
+            line-height: 25px;
+            font-weight: 800;
+            width: calc(100% + 40px);
+            margin-left: -20px;
+        }
+        &-desc {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            margin: 12px 0;
+        }
+        &-info {
+            border: 3px solid #fff;
+            margin-top: auto;
+            padding: 11px 12px;
+        }
+        &-time {
+            font-size: 11.8px;
+            font-weight: 600;
+        }
+        &-price {
+            font-size: 31.6px;
+            font-weight: 700;
+            margin-top: 6px;
+            span {
+                font-size: 25px;
+            }
+        }
+    }
+    &__tags {
+        width: 800px;
+        max-width: 100%;
+        margin: 50px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__tag {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        border: 1px solid $green;
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: 700;
+        color: $green;
+        height: 39px;
+        padding: 0 10px;
+        white-space: nowrap;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        &:hover {
+            border-color: $lightGreen;
+        }
+    }
+}
+
+.med-center {
+    padding: 25px 0 120px;
+    &__title {
+        text-align: center;
+    }
+    &__items {
+        margin: 40px auto 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 17px;
+        max-width: 790px;
+        &-title {
+            margin-bottom: -7px;
+            text-align: center;
+            text-transform: unset;
+        }
+    }
+}
+
+.med-service {
+    border: 3px solid $green;
+    border-radius: 3px;
+    padding: 10px 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__left {
+        padding-right: 30px;
+    }
+    &__title {
+        font-size: 27px;
+        line-height: 29px;
+        font-weight: 700;
+        color: $green;
+        max-width: 260px;
+    }
+    &__price {
+        font-size: 30.6px;
+        line-height: 32px;
+        font-weight: 700;
+        margin-top: 20px;
+        color: $green;
+    }
+    &__list {
+        li {
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 400;
+            color: #000000;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                width: 8px;
+                height: 8px;
+                border: 1px solid $green;
+                border-radius: 50%;
+                right: 100%;
+                top: 4px;
+                margin-right: 14px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-med {
+        &__title {
+            font-size: 90px;
+        }
+        &__title2 {
+            font-size: 34px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .med {
+        &__inner {
+            padding-left: 0;
+        }
+        &__right {
+            width: calc(100% - 360px);
+            padding: 0;
+        }
+    }
+    .cosmetic {
+        &__items {
+            padding: 0;
+            grid-template-columns: repeat(4, calc(25% - 12px));
+            gap: 11px 16px;
+        }
+        &__item {
+            &-title {
+                font-size: 20px;
+            }
+            &-desc {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main-med {
+        &__title {
+            font-size: 75px;
+        }
+        &__title2 {
+            font-size: 32px;
+        }
+    }
+    .med {
+        &__inner {
+            display: block;
+            margin-top: 24px;
+        }
+        &__right {
+            width: 100%;
+            margin-top: 34px;
+        }
+        &__left {
+            padding: 0 9px;
+            width: 100%;
+        }
+        &__card {
+            padding: 45px 26px 20px;
+            &-title {
+                font-size: 21.1px;
+                line-height: 22px;
+            }
+            &-desc {
+                font-size: 10.2px;
+                margin-top: 5px;
+            }
+            &-items {
+                margin-top: 30px;
+            }
+            &-item {
+                margin-top: 15px;
+                padding: 3px 12px;
+            }
+            &-day {
+                font-size: 16.1px;
+            }
+            &-price {
+                font-size: 33.5px;
+                span {
+                    font-size: 25.4px;
+                }
+            }
+        }
+        &__procedure {
+            width: calc(100% + 20px);
+            margin-left: -10px;
+            margin-top: 23px;
+        }
+        &__hint {
+            margin: 30px 0 0;
+            width: 100%;
+            li {
+                font-size: 11px;
+                line-height: 14px;
+            }
+        }
+    }
+    .procedure {
+        padding: 24px 0 40px;
+        &__items {
+            margin-top: 25px;
+        }
+        &__item {
+            padding: 15px 10px 15px;
+            &-num {
+                font-size: 27.3px;
+            }
+            &-title {
+                margin-top: 10px;
+                font-size: 11.5px;
+                line-height: 13px;
+                max-width: 140px;
+            }
+        }
+    }
+    .services {
+        &__inner {
+            padding: 125px 0 38px;
+        }
+        &__title {
+            font-size: 22px;
+            line-height: 29px;
+            max-width: 250px;
+        }
+        .swiper {
+            &-pagination {
+                font-size: 15.3px;
+                &-current {
+                    font-size: 40.8px;
+                }
+            }
+            &-button {
+                &-prev,
+                &-next {
+                    display: none;
+                }
+            }
+        }
+        &__wrap {
+            margin-top: 45px;
+            gap: 18px 30px;
+        }
+        &__item {
+            font-size: 11px;
+            line-height: 16px;
+        }
+        &__pag {
+            top: 69px;
+        }
+    }
+    .cosmetic {
+        &__items {
+            margin-top: 20px;
+            grid-template-columns: repeat(2, calc(50% - 8px));
+        }
+        &__tags {
+            margin-top: 10px;
+        }
+        &__tag {
+            margin-top: 5px;
+            height: 20px;
+            font-size: 10px;
+            padding: 0 5px;
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+        }
+    }
+    .med-service {
+        border-width: 1px;
+        grid-template-columns: 1fr 1fr;
+        &__left {
+            padding-right: 30px;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 22px;
+            max-width: 260px;
+        }
+        &__price {
+            font-size: 18.2px;
+            line-height: 19px;
+        }
+        &__list {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-med {
+        background-position: right 64% center;
+        &__title {
+            font-size: 38.8px;
+            line-height: 47px;
+        }
+        &__title2 {
+            font-size: 16.8px;
+            margin-top: 18px;
+        }
+    }
+    .med {
+        &__procedure {
+            &-title {
+                font-size: 13.1px;
+                line-height: 17px;
+            }
+            &-items {
+                margin-top: 12px;
+            }
+            &-item {
+                height: 29px;
+                font-size: 8.7px;
+                strong {
+                    font-size: 11.6px;
+                }
+            }
+        }
+    }
+    .services {
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .procedure {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+        &__item {
+            &:nth-child(-n+2) {
+                border: none;
+            }
+        }
+    }
+    .cosmetic {
+        &__title {
+            font-size: 20px;
+        }
+        &__item {
+            padding: 25px 15px 20px;
+            &::before {
+                width: 18px;
+                height: 18px;
+            }
+            &-title {
+                font-size: 14.3px;
+                line-height: 13px;
+                width: calc(100% + 30px);
+                margin-left: -15px;
+                padding: 0 2px;
+            }
+            &-desc {
+                font-size: 7.4px;
+                line-height: 10px;
+                margin: 8px 0;
+            }
+            &-info {
+                border-width: 2px;
+                padding: 6px 10px;
+            }
+            &-time {
+                font-size: 6.3px;
+            }
+            &-price {
+                font-size: 16.9px;
+                margin-top: 4px;
+                span {
+                    font-size: 13.4px;
+                }
+            }
+        }
+    }
+    .med-center {
+        padding-bottom: 78px;
+        &__items {
+            margin-top: 35px;
+            gap: 12px;
+            &-title {
+                margin: 12px 0;
+            }
+        }
+    }
+    .med-service {
+        grid-template-columns: 1fr;
+        &__title {
+            br {
+                display: none;
+            }
+        }
+        &__left {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__price {
+            margin-top: 0;
+        }
+        &__list {
+            margin-top: 25px;
+            padding-left: 23px;
+        }
+    }
+}

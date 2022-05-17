@@ -1,4 +1,4 @@
-<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"ARXY", "description":"", "keywords":"",})
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
 
 <body>
     <div class="wrapper">
@@ -6,59 +6,21 @@
         <main class="content">
 
             <section class='main'>
-                <div class="main__badges">
-                    <a href="" class="main__badge">
-                        <img src="img/booking.webp" alt="">
-                    </a>
-                    <a href="" class="main__badge">
-                        <img src="img/yandex.webp" alt="">
-                    </a>
-                </div>
+                @@include('components/first-screen/_badges.html')
+                <!--  -->
+                @@include('components/first-screen/_socials.html')
                 <div class='container'>
                     <div class='main__inner'>
                         <div class="main__title">ОТДЫХ – ЭТО БОРОВОЕ!</div>
                         <div class="main__title2">БОРОВОЕ</div>
                         <div class="main__title3">начинается здесь!</div>
-
-                        <div class="main__socials">
-                            <a href="" class="main__socials-item">
-                                <img src="img/instagram.png" alt="">
-                            </a>
-                            <a href="" class="main__socials-item">
-                                <img src="img/instagram.png" alt="">
-                            </a>
-                            <a href="" class="main__socials-item">
-                                <img src="img/youtube.png" alt="">
-                            </a>
-                            <a href="" class="main__socials-item">
-                                <img src="img/whatsapp.png" alt="">
-                            </a>
-                        </div>
-
-                        <div class="main__booking booking">
-                            <div class="booking__left">
-                                <button class="booking__btn btn btn-orange">ПОДБОР ТУРА</button>
-                            </div>
-                            <div class="booking__right">
-                                <img src="img/calendar.webp" alt="">
-                                <div class="booking__field booking__field--bn">
-                                    <label>заезд</label>
-                                    <input value="27/06" type="text" />
-                                </div>
-                                <div class="booking__field">
-                                    <label>выезд</label>
-                                    <input value="8/08" type="text" />
-                                </div>
-                                <div class="booking__field">
-                                    <label>гостей</label>
-                                    <input type="text" value="3">
-                                </div>
-                                <button class="booking__btn booking__btn2 btn btn-green">БРОНИРУЙ ОНЛАЙН</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
+
+            <div class="main__booking booking">
+                @@include('components/first-screen/_booking.html')
+            </div>
 
             <section class='catalog'>
                 <div class="catalog__title">Отдых в Боровом для всей семьи</div>
@@ -207,30 +169,7 @@
             </section>
 
             <section class='consult'>
-                <div class='container'>
-                    <div class="consult__inner">
-                        <div class="consult__title">Подпишитесь на наши новости</div>
-                        <form class='consult__form'>
-                            <fieldset class='consult__fg form-group'>
-                                <input type='text' placeholder="Имя" />
-                            </fieldset>
-                            <fieldset class='consult__fg form-group'>
-                                <input type='email' placeholder="E-mail" />
-                            </fieldset>
-                            <div class="consult__checks">
-                                <div class="consult__check check">
-                                    <input type='checkbox' />
-                                    <label>Гость</label>
-                                </div>
-                                <div class="consult__check check">
-                                    <input type='checkbox' />
-                                    <label>Партнер</label>
-                                </div>
-                            </div>
-                            <button class="consult__btn btn btn-green-light">Отправить</button>
-                        </form>
-                    </div>
-                </div>
+                @@include('components/page-blocks/_consult.html')
             </section>
         </main>
         @@include('components/page-blocks/_footer.html')
