@@ -4,21 +4,6 @@
     text-align: center;
     color: #ffffff;
     background-position: center;
-    &__title {
-        font-size: 104.2px;
-        font-weight: 800;
-    }
-    &__title2 {
-        font-size: 38.9px;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        margin-top: 15px;
-    }
-    &__title,
-    &__title2 {
-        text-transform: uppercase;
-        transform: translateY(30px);
-    }
 }
 
 .med {
@@ -382,6 +367,7 @@
         font-weight: 700;
         margin-top: 20px;
         color: $green;
+        white-space: nowrap;
     }
     &__list {
         li {
@@ -405,17 +391,6 @@
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
-        }
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .main-med {
-        &__title {
-            font-size: 90px;
-        }
-        &__title2 {
-            font-size: 34px;
         }
     }
 }
@@ -448,14 +423,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    .main-med {
-        &__title {
-            font-size: 75px;
-        }
-        &__title2 {
-            font-size: 32px;
-        }
-    }
     .med {
         &__inner {
             display: block;
@@ -609,19 +576,6 @@
 @media screen and (max-width: 768px) {
     .main-med {
         background-position: right 64% center;
-        &__title {
-            font-size: 38.8px;
-            line-height: 47px;
-            width: calc(100% + 60px);
-            margin-left: -30px;
-            @media screen and (max-width: 370px) {
-                font-size: 30px;
-            }
-        }
-        &__title2 {
-            font-size: 16.8px;
-            margin-top: 18px;
-        }
     }
     .med {
         &__procedure {
@@ -708,8 +662,9 @@
         }
     }
     .med-service {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         &__title {
+            margin-bottom: 10px;
             br {
                 display: none;
             }
@@ -717,12 +672,15 @@
         &__left {
             display: flex;
             justify-content: space-between;
+            padding: 0;
+            flex-wrap: wrap;
         }
         &__price {
             margin-top: 0;
+            margin-bottom: 10px;
         }
         &__list {
-            margin-top: 25px;
+            margin-top: 15px;
             padding-left: 23px;
         }
     }

@@ -3,22 +3,10 @@
     background-image: url(../img/main_bg4.webp);
     text-align: center;
     color: #ffffff;
-    background-position: center;
-    &__title {
-        font-size: 113px;
-        font-weight: 800;
-    }
-    &__title2 {
-        font-size: 38.9px;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        margin-top: 15px;
-    }
+    &__title {}
+    &__title2 {}
     &__title,
-    &__title2 {
-        text-transform: uppercase;
-        transform: translateY(30px);
-    }
+    &__title2 {}
 }
 
 .hotel {
@@ -614,14 +602,6 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .main-adult {
-        &__title {
-            font-size: 96px;
-        }
-        &__title2 {
-            font-size: 34px;
-        }
-    }
     .include {
         &__items {
             grid-template-columns: repeat(4, 1fr);
@@ -678,14 +658,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    .main-adult {
-        &__title {
-            font-size: 90px;
-        }
-        &__title2 {
-            font-size: 32px;
-        }
-    }
     .hotel {
         padding: 24px 0 25px;
         overflow: hidden;
@@ -882,14 +854,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .main-adult {
-        &__title {
-            font-size: 66px;
-        }
-        &__title2 {
-            font-size: 24px;
-        }
-    }
     .hotel {
         &__items {
             grid-template-columns: repeat(3, 1fr);
@@ -956,14 +920,6 @@
 }
 
 @media screen and (max-width: 576px) {
-    .main-adult {
-        &__title {
-            font-size: 36px;
-        }
-        &__title2 {
-            font-size: 18px;
-        }
-    }
     .hotel {
         &__group {
             &-top {

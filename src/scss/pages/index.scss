@@ -5,6 +5,9 @@
     background-position: top center;
     position: relative;
     margin-bottom: -120px;
+    &--inner {
+        background-position: center;
+    }
     &__inner,
     .container {
         height: 100%;

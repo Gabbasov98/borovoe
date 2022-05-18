@@ -3,18 +3,6 @@
     background-image: url(../img/main_bg6.webp);
     text-align: center;
     color: #ffffff;
-    &__title {
-        font-size: 92px;
-        font-weight: 800;
-        text-transform: uppercase;
-    }
-    &__title2 {
-        font-size: 38.9px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        margin-top: 32px;
-    }
 }
 
 .conf {
@@ -148,17 +136,6 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .main-comp {
-        &__title {
-            font-size: 80px;
-        }
-        &__title2 {
-            font-size: 34px;
-        }
-    }
-}
-
 @media screen and (max-width: 1100px) {
     .conf {
         &__inner {
@@ -176,14 +153,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    .main-comp {
-        &__title {
-            font-size: 55px;
-        }
-        &__title2 {
-            font-size: 32px;
-        }
-    }
     .conf {
         &__inner {
             display: block;
@@ -250,24 +219,6 @@
                 line-height: 12px;
                 margin-top: 14px;
             }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .main-comp {
-        &__title {
-            font-size: 39.6px;
-            line-height: 102%;
-            width: calc(100% + 60px);
-            margin-left: -30px;
-            @media screen and (max-width: 410px) {
-                font-size: 30px;
-            }
-        }
-        &__title2 {
-            font-size: 18px;
-            margin-top: 18px;
         }
     }
 }
