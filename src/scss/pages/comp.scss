@@ -258,10 +258,16 @@
     .main-comp {
         &__title {
             font-size: 39.6px;
-            line-height: 42px;
+            line-height: 102%;
+            width: calc(100% + 60px);
+            margin-left: -30px;
+            @media screen and (max-width: 410px) {
+                font-size: 30px;
+            }
         }
         &__title2 {
             font-size: 18px;
+            margin-top: 18px;
         }
     }
 }
