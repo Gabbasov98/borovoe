@@ -3,17 +3,21 @@
     background-image: url(../img/main_bg4.webp);
     text-align: center;
     color: #ffffff;
+    background-position: center;
     &__title {
         font-size: 113px;
         font-weight: 800;
-        text-transform: uppercase;
     }
     &__title2 {
         font-size: 38.9px;
         font-weight: 600;
-        text-transform: uppercase;
         letter-spacing: 0.1em;
-        margin-top: 32px;
+        margin-top: 15px;
+    }
+    &__title,
+    &__title2 {
+        text-transform: uppercase;
+        transform: translateY(30px);
     }
 }
 
