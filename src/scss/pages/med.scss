@@ -679,6 +679,11 @@
         &__list {
             margin-top: 15px;
             padding-left: 23px;
+            li {
+                &::before {
+                    top: 5px;
+                }
+            }
         }
     }
 }
