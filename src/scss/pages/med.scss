@@ -380,12 +380,12 @@
                 content: '';
                 position: absolute;
                 z-index: 1;
-                width: 8px;
-                height: 8px;
-                border: 1px solid $green;
+                width: 7px;
+                height: 7px;
+                border: 2px solid $green;
                 border-radius: 50%;
                 right: 100%;
-                top: 4px;
+                top: 7px;
                 margin-right: 14px;
             }
             &:not(:last-child) {
